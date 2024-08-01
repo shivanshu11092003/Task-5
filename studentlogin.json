@@ -1,0 +1,59 @@
+{
+    "student": [
+        {
+            "student_id": "123",
+            "name": "John Smith",
+            "status": "present"
+        },
+        {
+            "student_id": "456",
+            "name": "Jane Doe",
+            "status": "present"
+        },
+        {
+            "student_id": "789",
+            "name": "Bob Johnson",
+            "status": "present"
+        },
+        {
+            "student_id": "1232",
+            "name": "John Smith",
+            "status": "absent"
+        },
+        {
+            "student_id": "12456",
+            "name": "Jane Doe",
+            "status": "absent"
+        },
+        {
+            "student_id": "71289",
+            "name": "Bob Johnson",
+            "status": "absent"
+        },
+        {
+            "student_id": "12323",
+            "name": "John Smith",
+            "status": "absent"
+        },
+        {
+            "student_id": "42356",
+            "name": "Jane Doe",
+            "status": "absent"
+        },
+        {
+            "student_id": "00085",
+            "name": "Holly Brooks",
+            "status": "absent"
+        },
+        {
+            "student_id": "00086",
+            "name": "Isaac Taylor",
+            "status": "present"
+        },
+        {
+            "student_id": "00087",
+            "name": "Jasmine Ward",
+            "status": "absent"
+        }
+    ]
+}

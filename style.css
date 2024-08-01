@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Edu AU VIC WA NT Hand";
-    font-optical-sizing: auto;
+    font-family: "Gupter", serif;
+    font-weight: 400;
 
     background-color: white;
     
@@ -14,10 +14,62 @@ body{
     justify-content: center;
     margin: auto;
     align-items: center;
+    background-color: #232323;
+    min-height: 100vh;
+    width: 100%;
 }
+
 .header{
-    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    width: 40vw;
     font-size: 2rem;
+    color: white;
+    background-color: #232323;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.header1{
+    background-color: #232323;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 3em;
+    width: 19em;
+    border: 1px solid black;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    margin: 1em;
+}
+.selectdate{
+    background-color: #232323;
+    color: white;
+    height: 5vh;
+    width: 10vw;
+    font-size: 1.5rem;
+    outline: 0;
+    border: 0;
+    accent-color: green;
+
+
+
+}
+.datelabel{
+    font-size: 1.5rem;
+    background-color: #232323;
+    color: white;
+}
+.selectdatebtn{
+    border-radius: 10px;
+    height: 3.4em;
+    width: 6em;
+    font-size: 1rem;
+    border: 0;
+    outline: 0;
+    background-color: #0052b4;
+    color: whitesmoke;
 }
 .date{
     width: 100%;
@@ -41,6 +93,7 @@ body{
 .student{
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: auto;
     min-height: 80vh;
     width: 60vw;
@@ -49,6 +102,7 @@ body{
 .studentitem{
     border: 1px solid black;
     height: 8vh;
+    width: 60vw;
     display: flex;
     justify-content: space-between;
 }
@@ -76,4 +130,60 @@ body{
     background-color: black;
     color: whitesmoke;
     transition: all .3s;
+}
+
+.student{
+    background-color: #232323;
+
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    min-height: 80%;
+    width: 70%;
+
+}
+.studentitem{
+    background-color: #0052b4;
+    margin: .5em;
+    border: 1px solid black;
+    height: 8vh;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+.name{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    background-color: #0052b4;
+
+
+}
+.id{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    background-color: #0052b4;
+
+
+}
+.attendence{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    background-color: #0052b4;
+
+}
+.inputcheckbox{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    background-color: #0052b4;
+    height: 2rem;
+    width: 2rem;
+
 }

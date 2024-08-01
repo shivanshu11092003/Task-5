@@ -5,12 +5,13 @@ const addAttendence = document.getElementById("addAttendence")
 let date = []
 
 const dateinput = inputdate.value
+inputdate.value = dateinput
 addAttendence.addEventListener("click", async () => {
     const dateinput = inputdate.value
     let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
     const json = await response.json()
     const id = json.length;
-    console.log(id)
+    console.log(dateinput)
 
     const currentdata = await fetch("http://localhost:8000/data")
     const json2 = await currentdata.json();
@@ -113,19 +114,17 @@ async function getdata(dateinput) {
         let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
         const json = await response.json()
         let html = ''
-        let id = json[0].id
-        console.log(id)
-        console.log(json)
+        const passid=json[0].id
         
 
         json[0].attendence.forEach((element,index) => {
-            console.log(element)
+        
             if (element.status == "present") {
                 html += `  <div class="studentitem" id="studentitem${index}">
             <div class="name">  Name : ${element.name}  </div>
             <div class="id">    Id:${element.student_id}  </div>
             <div class="attendence">   Status:
-            <label><input type="checkbox"  id="checkbox${index}}" name="checkbox${index}}" value="present" Checked></label>
+            <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}}" name="checkbox${index}}" value="present" Checked></label>
             </div>
                 
         </div>`
@@ -134,7 +133,7 @@ async function getdata(dateinput) {
             <div class="name">  Name : ${element.name} </div>
             <div class="id">    Id:${element.student_id}  </div>
             <div class="attendence">   Status:
-            <label><input type="checkbox" id="checkbox${index}    " name="checkbox${index}}" value="present"></label>
+            <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}    " name="checkbox${index}}" value="present"></label>
             </div>
         </div>`
 
@@ -143,7 +142,7 @@ async function getdata(dateinput) {
 
         })
 
-        studentcard.innerHTML = html + `<button id="${id}" class="submitbtn" onclick="submitAttendence(this.id)" >Submit</button>`
+        studentcard.innerHTML = html + `<button id="${passid}" class="submitbtn" onclick="submitAttendence(this.id)" >Submit</button>`
 
 }
 getdata(dateinput);
@@ -202,9 +201,13 @@ async function submitAttendence(id) {
 
     });
     console.log(await updateresponse.json)
+    window.location.assign("http://127.0.0.1:5500/teacherscreen.html    ")
+
+
 
     attendancMarkedArray = []
     updatebody=[]
+    checkboxarray=[]
 
 }
 
