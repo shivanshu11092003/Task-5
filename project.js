@@ -8,6 +8,7 @@ const dateinput = inputdate.value
 inputdate.value = dateinput
 addAttendence.addEventListener("click", async () => {
     const dateinput = inputdate.value
+    
     let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
     const json = await response.json()
     const id = json.length;

@@ -1,4 +1,130 @@
 {
+
+  "student": [
+    {
+        "id":"0",
+        "student_id": "123",
+        "name": "John Smith",
+        "password":"pass123"
+    },
+    {
+        "id":"1",
+        "student_id": "456",
+        "name": "Jane Doe",
+        "password":"pass123"
+    },
+    {
+        "id":"2",
+        "student_id": "789",
+        "name": "Bob Johnson",
+        "password":"pass123"
+    },
+    {
+        "id":"3",
+        "student_id": "1232",
+        "name": "John Smith",
+        "password":"pass123"
+    },
+    {
+        "id":"4",
+        "student_id": "12456",
+        "name": "Jane Doe",
+        "password":"pass123"
+    },
+    {
+        "id":"5",
+        "student_id": "71289",
+        "name": "Bob Johnson",
+        "password":"pass123"
+    },
+    {
+        "id":"6",
+        "student_id": "12323",
+        "name": "John Smith",
+        "password":"pass123"
+    },
+    {
+        "id":"7",
+        "student_id": "42356",
+        "name": "Jane Doe",
+        "password":"pass123"
+    },
+    {
+        "id":"8",
+        "student_id": "00085",
+        "name": "Holly Brooks",
+        "password":"pass123"
+    },
+    {
+        "id":"9",
+        "student_id": "00086",
+        "name": "Isaac Taylor",
+        "password":"pass123"
+    },
+    {
+        "id":"10",
+        "student_id": "00087",
+        "name": "Jasmine Ward",
+        "password":"pass123"
+    }
+],
+"Teacher": [
+    {
+        "teacher_id": "123",
+        "name": "John Smith",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "456",
+        "name": "Jane Doe",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "789",
+        "name": "Bob Johnson",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "1232",
+        "name": "John Smith",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "12456",
+        "name": "Jane Doe",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "71289",
+        "name": "Bob Johnson",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "12323",
+        "name": "John Smith",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "42356",
+        "name": "Jane Doe",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "00085",
+        "name": "Holly Brooks",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "00086",
+        "name": "Isaac Taylor",
+        "password":"pass123"
+    },
+    {
+        "teacher_id": "00087",
+        "name": "Jasmine Ward",
+        "password":"pass123"
+    }
+],
   "data": [
     {
       "id": "0",
@@ -618,17 +744,17 @@
         {
           "student_id": "123",
           "name": "John Smith",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "456",
           "name": "Jane Doe",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "789",
           "name": "Bob Johnson",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00001",
@@ -638,7 +764,7 @@
         {
           "student_id": "00002",
           "name": "Bob Johnson",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00041",
@@ -648,7 +774,7 @@
         {
           "student_id": "00042",
           "name": "Paige Evans",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00043",
@@ -668,12 +794,12 @@
         {
           "student_id": "456",
           "name": "Jane Doe",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "789",
           "name": "Bob Johnson",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00001",
@@ -994,22 +1120,22 @@
         {
           "student_id": "00041",
           "name": "Owen Parker",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00042",
           "name": "Paige Evans",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00043",
           "name": "Quinn Edwards",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00044",
           "name": "Riley Collins",
-          "status": "absent"
+          "status": "present"
         }
       ]
     },
@@ -1273,57 +1399,68 @@
     {
       "student_id": "123",
       "name": "John Smith",
-      "status": "present"
+      "status": "present",
+      "id": "f4a1"
     },
     {
       "student_id": "456",
       "name": "Jane Doe",
-      "status": "present"
+      "status": "present",
+      "id": "7944"
     },
     {
       "student_id": "789",
       "name": "Bob Johnson",
-      "status": "present"
+      "status": "present",
+      "id": "7de9"
     },
     {
       "student_id": "1232",
       "name": "John Smith",
-      "status": "absent"
+      "status": "absent",
+      "id": "8c7a"
     },
     {
       "student_id": "12456",
       "name": "Jane Doe",
-      "status": "absent"
+      "status": "absent",
+      "id": "d6af"
     },
     {
       "student_id": "71289",
       "name": "Bob Johnson",
-      "status": "absent"
+      "status": "absent",
+      "id": "ddb1"
     },
     {
       "student_id": "12323",
       "name": "John Smith",
-      "status": "absent"
+      "status": "absent",
+      "id": "b191"
     },
     {
       "student_id": "42356",
       "name": "Jane Doe",
-      "status": "absent"
+      "status": "absent",
+      "id": "9ca5"
     },
     {
       "student_id": "00085",
       "name": "Holly Brooks",
-      "status": "absent"
+      "status": "absent",
+      "id": "c865"
     },
     {
       "student_id": "00086",
       "name": "Isaac Taylor",
-      "status": "present"
+      "status": "present",
+      "id": "218d"
     },
     {
       "student_id": "00087",
       "name": "Jasmine Ward",
-      "status": "absent"
+      "status": "absent",
+      "id": "e16c"
     }
   ]
 }

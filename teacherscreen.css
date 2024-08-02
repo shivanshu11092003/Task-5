@@ -102,7 +102,8 @@ body {
 }
 
 .studentitem {
-    background-color: #0052b4;
+    background-color: #383838;
+
     margin: .5em;
     border: 1px solid black;
     height: 8vh;
@@ -117,7 +118,8 @@ body {
     align-items: center;
     color: white;
     font-size: 1.4rem;
-    background-color: #0052b4;
+    background-color: #383838;
+
 
 
 }
@@ -127,7 +129,8 @@ body {
     align-items: center;
     color: white;
     font-size: 1.4rem;
-    background-color: #0052b4;
+    background-color: #383838;
+
 
 
 }
@@ -137,7 +140,8 @@ body {
     align-items: center;
     color: white;
     font-size: 1.4rem;
-    background-color: #0052b4;
+    background-color: #383838;
+
 
 }
 
@@ -149,5 +153,6 @@ body {
     background-color: #0052b4;
     height: 2rem;
     width: 2rem;
+    accent-color: #0052b4;
 
 }
