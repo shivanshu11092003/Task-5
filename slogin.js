@@ -1,29 +1,28 @@
-const teacherid = document.getElementById("teacherid")
+const teacherid = document.getElementById("sid")
 const passwd = document.getElementById("password")
 const submitbtn = document.getElementById("submitbtn")
-
 let x = 0;
 async function getteacher() {
-    let response = await fetch("http://localhost:8000/Teacher")
+    let response = await fetch("http://localhost:8000/student")
     const json = await response.json()
     console.log(json)
     console.log(teacherid.value)
     console.log(passwd.value)
-    console.log(json.length)
+
+
     for(let i =0;i<json.length;i++){
         console.log(json[i])
-        if (json[i].teacher_id == teacherid.value) {
+        if (json[i].student_id == teacherid.value) {
             x = 0;
             teacherid.style.borderColor = "white";
             console.log("teacher id Allowed ")
             if (json[i].password == passwd.value) {
                 console.log("Allowed")
+                sessionStorage.setItem("sid",teacherid.value)
+                sessionStorage.setItem("passwd",passwd.value)
 
 
-                window.location.assign("http://127.0.0.1:5500/teacherscreen.html")
-
-
-
+                window.location.assign("http://127.0.0.1:5500/studentdetails/stdetails.html")
 
 
             } else {
@@ -40,7 +39,7 @@ async function getteacher() {
             x = 1;
 
             console.log("not Allowed 2")
-
+            
 
         }
         if (x == 1) {
@@ -56,6 +55,7 @@ submitbtn.addEventListener("click", () => {
     if (x==1) {
         teacherid.style.borderColor = "red";
     }
+
 
 
 })

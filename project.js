@@ -7,81 +7,110 @@ let date = []
 const dateinput = inputdate.value
 
 
+
+
+
+
 addAttendence.addEventListener("click", async () => {
-    const dateinput = inputdate.value
-    localStorage.setItem("InputDate",dateinput)
-    
-    let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
-    const json = await response.json()
-    const id = json.length;
-    console.log(dateinput)
+    const comparedate = new Date(inputdate.value);
+    console.log(comparedate.getDate())
+    const x = new Date();
+    console.log(x.getDate())
+    if (x.getFullYear() == comparedate.getFullYear()) {
+        if (x.getMonth() + 1 == comparedate.getMonth() + 1) {
+            if (comparedate.getDate()-3 <= x.getDate() ) {
+                const dateinput = inputdate.value
+                localStorage.setItem("InputDate", dateinput)
 
-    const currentdata = await fetch("http://localhost:8000/data")
-    const json2 = await currentdata.json();
-    const id2 = json2.length
+                let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
+                const json = await response.json()
+                const id = json.length;
 
-    if (id == 0) {
-        const adddate = await fetch("http://localhost:8000/data",
-            {
-                method: `POST`,
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    "id": `${id2}`,
-                    "date": `${dateinput}`,
-                    "attendence": [{
-                        "student_id": "123",
-                        "name": "John Smith",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "456",
-                        "name": "Jane Doe",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "789",
-                        "name": "Bob Johnson",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "00001",
-                        "name": "Alice Smith",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "00002",
-                        "name": "Bob Johnson",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "00041",
-                        "name": "Owen Parker",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "00042",
-                        "name": "Paige Evans",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "00043",
-                        "name": "Quinn Edwards",
-                        "status": "absent"
-                    },
-                    {
-                        "student_id": "00044",
-                        "name": "Riley Collins",
-                        "status": "absent"
-                    }]
-                })
+
+
+                const currentdata = await fetch("http://localhost:8000/data")
+                const json2 = await currentdata.json();
+                const id2 = json2.length
+
+                if (id == 0) {
+                    const adddate = await fetch("http://localhost:8000/data",
+                        {
+                            method: `POST`,
+                            headers: {
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify({
+                                "id": `${id2}`,
+                                "date": `${dateinput}`,
+                                "attendence": [{
+                                    "student_id": "123",
+                                    "name": "John Smith",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "456",
+                                    "name": "Jane Doe",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "789",
+                                    "name": "Bob Johnson",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "00001",
+                                    "name": "Alice Smith",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "00002",
+                                    "name": "Bob Johnson",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "00041",
+                                    "name": "Owen Parker",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "00042",
+                                    "name": "Paige Evans",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "00043",
+                                    "name": "Quinn Edwards",
+                                    "status": "absent"
+                                },
+                                {
+                                    "student_id": "00044",
+                                    "name": "Riley Collins",
+                                    "status": "absent"
+                                }]
+                            })
+                        }
+
+                    )
+
+                }
+                getdata(dateinput);
+
             }
-
-        )
-
+            else{
+                
+                alert("can't update on this day")
+            }
+        }
+        else{
+            alert("can't update on this month")
+        }
     }
-    getdata(dateinput);
+    else{
+        alert("can't update on this year")
+    }
+
+
+
 
 
 })
@@ -114,16 +143,16 @@ addAttendence.addEventListener("click", async () => {
 async function getdata(dateinput) {
 
 
-        let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
-        const json = await response.json()
-        let html = ''
-        const passid=json[0].id
-        
+    let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
+    const json = await response.json()
+    let html = ''
+    const passid = json[0].id
 
-        json[0].attendence.forEach((element,index) => {
-        
-            if (element.status == "present") {
-                html += `  <div class="studentitem" id="studentitem${index}">
+
+    json[0].attendence.forEach((element, index) => {
+
+        if (element.status == "present") {
+            html += `  <div class="studentitem" id="studentitem${index}">
             <div class="name">  Name : ${element.name}  </div>
             <div class="id">    Id:${element.student_id}  </div>
             <div class="attendence">   Status:
@@ -131,8 +160,8 @@ async function getdata(dateinput) {
             </div>
                 
         </div>`
-            } else {
-                html += `  <div class="studentitem" id="studentitem${index}">
+        } else {
+            html += `  <div class="studentitem" id="studentitem${index}">
             <div class="name">  Name : ${element.name} </div>
             <div class="id">    Id:${element.student_id}  </div>
             <div class="attendence">   Status:
@@ -140,15 +169,15 @@ async function getdata(dateinput) {
             </div>
         </div>`
 
-            }
-           
+        }
 
-        })
 
-        studentcard.innerHTML = html + `<button id="${passid}" class="submitbtn" onclick="submitAttendence(this.id)" >Submit</button>`
+    })
+
+    studentcard.innerHTML = html + `<button id="${passid}" class="submitbtn" onclick="submitAttendence(this.id)" >Submit</button>`
 
 }
-const localdate=localStorage.getItem("InputDate")
+const localdate = localStorage.getItem("InputDate")
 inputdate.value = localdate
 getdata(localdate);
 
@@ -176,10 +205,10 @@ async function submitAttendence(id) {
     let json = await response.json()
     let updatebody = {}
 
-    json[0].attendence.forEach((element,index)=>{
-        element.status=attendancMarkedArray[index]
+    json[0].attendence.forEach((element, index) => {
+        element.status = attendancMarkedArray[index]
     })
-    updatebody=json[0]
+    updatebody = json[0]
     console.log(updatebody)
 
 
@@ -206,13 +235,13 @@ async function submitAttendence(id) {
 
     });
     console.log(await updateresponse.json)
-    window.location.assign("http://127.0.0.1:5500/teacherscreen.html    ")
+    window.location.assign("http://127.0.0.1:5500/teacherscreen.html")
 
 
 
     attendancMarkedArray = []
-    updatebody=[]
-    checkboxarray=[]
+    updatebody = []
+    checkboxarray = []
 
 }
 

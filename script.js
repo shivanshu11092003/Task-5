@@ -6,6 +6,7 @@ nextpagebtn.addEventListener("click",()=>{
 
 })
 const x = new Date().toJSON().slice(0,10);
+console.log(x)
 // let date=x.getDate()
 
 // let month=x.getMonth()+1
@@ -34,7 +35,7 @@ async function getdetails(){
         <div class="name">  Name : ${element.name} </div>
         <div class="id">    Id:${element.student_id}  </div>
         <div class="attendence">   Status:
-        <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}    " name="checkbox${index}}" value="present"></label>
+        <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}" name="checkbox${index}}" value="present"></label>
         </div>
     </div>`
 

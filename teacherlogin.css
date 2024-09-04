@@ -38,8 +38,8 @@ h3{
     width: 20vw;
     margin: .4em;
     border-radius: 1em;
-    border: 0;
-    outline: 0;
+    border: 6;
+    border-color: aliceblue;
 }
 .submitbtn{
     font-size: 1.4rem;

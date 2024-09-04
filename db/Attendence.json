@@ -3,67 +3,67 @@
     {
       "student_id": "123",
       "name": "John Smith",
-      "status": "present",
+      "password": "stpass123",
       "id": "f4a1"
     },
     {
       "student_id": "456",
       "name": "Jane Doe",
-      "status": "present",
+      "password": "stpass123",
       "id": "7944"
     },
     {
       "student_id": "789",
       "name": "Bob Johnson",
-      "status": "present",
+      "password": "stpass123",
       "id": "7de9"
     },
     {
       "student_id": "1232",
       "name": "John Smith",
-      "status": "absent",
+      "password": "stpass123",
       "id": "8c7a"
     },
     {
       "student_id": "12456",
       "name": "Jane Doe",
-      "status": "absent",
+      "password": "stpass123",
       "id": "d6af"
     },
     {
       "student_id": "71289",
       "name": "Bob Johnson",
-      "status": "absent",
+      "password": "stpass123",
       "id": "ddb1"
     },
     {
       "student_id": "12323",
       "name": "John Smith",
-      "status": "absent",
+      "password": "stpass123",
       "id": "b191"
     },
     {
       "student_id": "42356",
       "name": "Jane Doe",
-      "status": "absent",
+      "password": "stpass123",
       "id": "9ca5"
     },
     {
       "student_id": "00085",
       "name": "Holly Brooks",
-      "status": "absent",
+      "password": "stpass123",
       "id": "c865"
     },
     {
       "student_id": "00086",
       "name": "Isaac Taylor",
-      "status": "present",
+      "password": "stpass123",
       "id": "218d"
     },
     {
       "student_id": "00087",
       "name": "Jasmine Ward",
-      "status": "absent",
+      "password": "stpass123",
       "id": "e16c"
     }
   ],
@@ -138,77 +138,27 @@
   "data": [
     {
       "id": "0",
-      "date": "2023-02-24",
-      "attendance": [
+      "date": "2024-02-24",
+      "attendence": [
         {
           "student_id": "123",
           "name": "John Smith",
-          "status": "present"
-        },
-        {
-          "student_id": "456",
-          "name": "Jane Doe",
-          "status": "present"
-        },
-        {
-          "student_id": "789",
-          "name": "Bob Johnson",
-          "status": "present"
-        },
-        {
-          "student_id": "1232",
-          "name": "John Smith",
-          "status": "absent"
-        },
-        {
-          "student_id": "12456",
-          "name": "Jane Doe",
-          "status": "absent"
-        },
-        {
-          "student_id": "71289",
-          "name": "Bob Johnson",
-          "status": "absent"
-        },
-        {
-          "student_id": "12323",
-          "name": "John Smith",
-          "status": "absent"
-        },
-        {
-          "student_id": "42356",
-          "name": "Jane Doe",
-          "status": "absent"
-        },
-        {
-          "student_id": "00085",
-          "name": "Holly Brooks",
-          "status": "absent"
-        },
-        {
-          "student_id": "00086",
-          "name": "Isaac Taylor",
-          "status": "present"
-        },
-        {
-          "student_id": "00087",
-          "name": "Jasmine Ward",
           "status": "absent"
         },
         {
           "student_id": "456",
           "name": "Jane Doe",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "789",
           "name": "Bob Johnson",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00001",
           "name": "Alice Smith",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00002",
@@ -218,12 +168,12 @@
         {
           "student_id": "00041",
           "name": "Owen Parker",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00042",
           "name": "Paige Evans",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00043",
@@ -239,7 +189,7 @@
     },
     {
       "id": "1",
-      "date": "2024-07-31",
+      "date": "2024-09-03",
       "attendence": [
         {
           "student_id": "123",
@@ -795,51 +745,6 @@
           "student_id": "00044",
           "name": "Riley Collins",
           "status": "present"
-        },
-        {
-          "student_id": "123",
-          "name": "John Smith",
-          "status": "absent"
-        },
-        {
-          "student_id": "456",
-          "name": "Jane Doe",
-          "status": "present"
-        },
-        {
-          "student_id": "789",
-          "name": "Bob Johnson",
-          "status": "present"
-        },
-        {
-          "student_id": "00001",
-          "name": "Alice Smith",
-          "status": "present"
-        },
-        {
-          "student_id": "00002",
-          "name": "Bob Johnson",
-          "status": "present"
-        },
-        {
-          "student_id": "00041",
-          "name": "Owen Parker",
-          "status": "present"
-        },
-        {
-          "student_id": "00042",
-          "name": "Paige Evans",
-          "status": "present"
-        },
-        {
-          "student_id": "00043",
-          "name": "Quinn Edwards",
-          "status": "present"
-        },
-        {
-          "student_id": "00044",
-          "name": "Riley Collins",
-          "status": "present"
         }
       ]
     },
@@ -1156,32 +1061,32 @@
         {
           "student_id": "123",
           "name": "John Smith",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "456",
           "name": "Jane Doe",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "789",
           "name": "Bob Johnson",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00001",
           "name": "Alice Smith",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00002",
           "name": "Bob Johnson",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00041",
           "name": "Owen Parker",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00042",
@@ -1198,6 +1103,7 @@
           "name": "Riley Collins",
           "status": "absent"
         }
+        
       ]
     },
     {
@@ -1605,6 +1511,363 @@
           "student_id": "00044",
           "name": "Riley Collins",
           "status": "present"
+        }
+      ]
+    },
+    {
+      "id": "27",
+      "date": "2024-09-04",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "present"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "present"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "present"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "present"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "present"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "present"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "id": "28",
+      "date": "2024-09-12",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "absent"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "absent"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "absent"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "absent"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "id": "29",
+      "date": "2024-09-11",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "absent"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "absent"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "absent"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "absent"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "id": "30",
+      "date": "2024-09-05",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "absent"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "absent"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "absent"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "absent"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "id": "31",
+      "date": "2024-09-06",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "absent"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "absent"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "absent"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "absent"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "id": "32",
+      "date": "2024-09-07",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "absent"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "absent"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "absent"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "absent"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "absent"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
+        }
+      ]
+    },
+    {
+      "id": "33",
+      "date": "2024-09-01",
+      "attendence": [
+        {
+          "student_id": "123",
+          "name": "John Smith",
+          "status": "absent"
+        },
+        {
+          "student_id": "456",
+          "name": "Jane Doe",
+          "status": "present"
+        },
+        {
+          "student_id": "789",
+          "name": "Bob Johnson",
+          "status": "present"
+        },
+        {
+          "student_id": "00001",
+          "name": "Alice Smith",
+          "status": "present"
+        },
+        {
+          "student_id": "00002",
+          "name": "Bob Johnson",
+          "status": "present"
+        },
+        {
+          "student_id": "00041",
+          "name": "Owen Parker",
+          "status": "absent"
+        },
+        {
+          "student_id": "00042",
+          "name": "Paige Evans",
+          "status": "absent"
+        },
+        {
+          "student_id": "00043",
+          "name": "Quinn Edwards",
+          "status": "absent"
+        },
+        {
+          "student_id": "00044",
+          "name": "Riley Collins",
+          "status": "absent"
         }
       ]
     }
