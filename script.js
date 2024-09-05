@@ -26,7 +26,7 @@ async function getdetails(){
         <div class="name">  Name : ${element.name}  </div>
        
         <div class="attendence">   Status:
-        <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}" name="checkbox${index}" value="present" Checked disabled></label>
+        <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}" name="checkbox${index}" value="present" Checked ></label>
         </div>
             
     </div>`
@@ -35,7 +35,7 @@ async function getdetails(){
         <div class="name">  Name : ${element.name} </div>
         
         <div class="attendence">   Status:
-        <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}" name="checkbox${index}" value="present" disabled></label>
+        <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}" name="checkbox${index}" value="present"></label>
         </div>
     </div>`
 
@@ -48,3 +48,7 @@ async function getdetails(){
 
 }
 getdetails();
+
+document.getElementById("logout").addEventListener("click",()=>{
+        window.location.assign("http://127.0.0.1:5500/Teacherlogin.html")
+})

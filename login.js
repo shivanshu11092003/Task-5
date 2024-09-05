@@ -1,12 +1,14 @@
 const teacherid = document.getElementById("teacherid")
 const passwd = document.getElementById("password")
 const submitbtn = document.getElementById("submitbtn")
+const box1 = document.getElementById("box1")
 
 let x = 0;
 async function getteacher() {
     let response = await fetch("http://localhost:8000/Teacher")
     const json = await response.json()
-    console.log(response)
+    console.log(json)
+
     console.log(teacherid.value)
     console.log(passwd.value)
     console.log(json.length)
@@ -23,17 +25,9 @@ async function getteacher() {
                 window.location.assign("http://127.0.0.1:5500/teacherscreen.html")
 
 
-
-
-
             } else {
                 passwd.style.borderColor = "red";
-
-
                 console.log("not Allowed 1")
-               
-
-
             }
 
         } else {
@@ -45,6 +39,7 @@ async function getteacher() {
         }
         if (x == 1) {
             teacherid.style.borderColor = "red";
+            
         }
 
     }
@@ -53,10 +48,5 @@ async function getteacher() {
 
 submitbtn.addEventListener("click", () => {
     getteacher();
-    if (x==1) {
-        teacherid.style.borderColor = "red";
-    }
-
-
 })
 

@@ -1673,12 +1673,12 @@
         {
           "student_id": "123",
           "name": "John Smith",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "456",
           "name": "Jane Doe",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "789",
@@ -1688,12 +1688,12 @@
         {
           "student_id": "00001",
           "name": "Alice Smith",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00002",
           "name": "Bob Johnson",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00041",
@@ -1708,12 +1708,12 @@
         {
           "student_id": "00043",
           "name": "Quinn Edwards",
-          "status": "present"
+          "status": "absent"
         },
         {
           "student_id": "00044",
           "name": "Riley Collins",
-          "status": "absent"
+          "status": "present"
         }
       ]
     },

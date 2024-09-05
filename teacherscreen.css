@@ -69,7 +69,13 @@ body {
     background-color: #383838;
     color: white;
 }
-
+.logout{
+    font-size: 1.1rem;
+    height: 3em;
+    width: 16em;
+    background-color: #383838;
+    color: white;
+}
 .div {
     background-color: #383838;
     color: white;
@@ -145,7 +151,7 @@ body {
 
 }
 
-.inputcheckbox {
+.inputcheckbox{
     display: flex;
     align-items: center;
     color: white;
@@ -154,5 +160,5 @@ body {
     height: 2rem;
     width: 2rem;
     accent-color: #0052b4;
-
+    cursor: none;
 }
