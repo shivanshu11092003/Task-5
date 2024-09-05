@@ -43,5 +43,8 @@ async function getdetails(){
 }
 getdetails();
 document.getElementById("logout").addEventListener("click",()=>{
-    window.location.assign("http://127.0.0.1:5500/Studentlogin.html")
+    if(confirm("Are You Sure?")){
+        window.location.assign("http://127.0.0.1:5500/Studentlogin.html")
+
+    }
 })

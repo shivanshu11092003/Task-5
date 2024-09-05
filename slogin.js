@@ -8,54 +8,76 @@ async function getteacher() {
     console.log(response)
     console.log(teacherid.value)
     console.log(passwd.value)
+    if(json.some(element => element.student_id == teacherid.value)){
+        teacherid.style.borderColor = "white";
+        msg.innerHTML = ``
+        json.forEach(element =>{
+            if(element.student_id == teacherid.value){
+                if(element.password == passwd.value){
+                    msg.innerHTML = ``
+                    window.location.assign("http://127.0.0.1:5500/studentdetails/stdetails.html")
+
+                }else{
+                    passwd.style.borderColor = "red";
+                    msg.innerHTML = `<p>Wrong Password<p>`
+                }
+            }
+        })
+        
+    }else{
+        teacherid.style.borderColor = "red";
+        msg.innerHTML = `<p>Wrong Id<p>`
 
 
-    for(let i =0;i<json.length;i++){
-        console.log(json[i])
-        if (json[i].student_id == teacherid.value) {
-            x = 0;
-            teacherid.style.borderColor = "white";
-            console.log("teacher id Allowed ")
-            if (json[i].password == passwd.value) {
-                console.log("Allowed")
-                sessionStorage.setItem("sid",teacherid.value)
-                sessionStorage.setItem("passwd",passwd.value)
+    }
 
 
-                window.location.assign("http://127.0.0.1:5500/studentdetails/stdetails.html")
+//     for(let i =0;i<json.length;i++){
+//         console.log(json[i])
+//         if (json[i].student_id == teacherid.value) {
+//             x = 0;
+//             teacherid.style.borderColor = "white";
+//             console.log("teacher id Allowed ")
+//             if (json[i].password == passwd.value) {
+//                 console.log("Allowed")
+//                 sessionStorage.setItem("sid",teacherid.value)
+//                 sessionStorage.setItem("passwd",passwd.value)
 
 
-            } else {
-                passwd.style.borderColor = "red";
+//                 window.location.assign("http://127.0.0.1:5500/studentdetails/stdetails.html")
 
 
-                console.log("not Allowed 1")
+//             } else {
+//                 passwd.style.borderColor = "red";
+//                 msg.innerHTML = `<p>Wrong Password<p>`
+
+
+//                 console.log("not Allowed 1")
                
 
 
-            }
+//             }
 
-        } else {
-            x = 1;
+//         } else {
+//             x = 1;
 
-            console.log("not Allowed 2")
+//             console.log("not Allowed 2")
             
 
-        }
-        if (x == 1) {
-            teacherid.style.borderColor = "red";
-        }
+//         }
+//         if (x == 1) {
+//             teacherid.style.borderColor = "red";
+//         }
 
-    }
+//     }
 
 }
 
 submitbtn.addEventListener("click", () => {
     getteacher();
-    if (x==1) {
-        teacherid.style.borderColor = "red";
-    }
-
+})
+document.getElementById("asteacher").addEventListener("click",()=>{
+    window.location.assign("http://127.0.0.1:5500/Teacherlogin.html")
 
 
 })

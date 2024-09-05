@@ -96,3 +96,7 @@ h3{
     background-color: #383838;
     color: aliceblue;
 }
+.asteacher:hover{
+    text-decoration: underline;
+    
+}
