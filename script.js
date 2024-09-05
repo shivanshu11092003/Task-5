@@ -17,25 +17,25 @@ console.log(x)
 async function getdetails(){
     let response = await fetch(`http://localhost:8000/data?date=${x}`)
     const json = await response.json()
-    console.log(json)
+    console.log(response)
     let html = ''
     json[0].attendence.forEach((element,index) => {
         
         if (element.status == "present") {
             html += `  <div class="studentitem" id="studentitem${index}">
         <div class="name">  Name : ${element.name}  </div>
-        <div class="id">    Id:${element.student_id}  </div>
+       
         <div class="attendence">   Status:
-        <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}}" name="checkbox${index}}" value="present" Checked></label>
+        <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}" name="checkbox${index}" value="present" Checked disabled></label>
         </div>
             
     </div>`
         } else {
             html += `  <div class="studentitem" id="studentitem${index}">
         <div class="name">  Name : ${element.name} </div>
-        <div class="id">    Id:${element.student_id}  </div>
+        
         <div class="attendence">   Status:
-        <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}" name="checkbox${index}}" value="present"></label>
+        <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}" name="checkbox${index}" value="present" disabled></label>
         </div>
     </div>`
 

@@ -4,7 +4,7 @@ async function getdetails(){
     let response = await fetch("http://localhost:8000/data")
 
     const json = await response.json()
-    console.log(json)
+    console.log(response)
     let html = ''
     json.forEach(element => {
         console.log(element.date)

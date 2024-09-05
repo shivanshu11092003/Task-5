@@ -6,7 +6,7 @@ let x = 0;
 async function getteacher() {
     let response = await fetch("http://localhost:8000/Teacher")
     const json = await response.json()
-    console.log(json)
+    console.log(response)
     console.log(teacherid.value)
     console.log(passwd.value)
     console.log(json.length)

@@ -15,35 +15,72 @@
 }
 .box{
     background-color: #383838;
-    height: 33vh;
-    width: 30vw;
+    height: 93vh;
+    width: 90vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     border-radius: 1em;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 }
+.box1{
+    background-color: #383838;
+
+    height: 43vh;
+    width: 29vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-items: center;
+    
+}
+.box2{
+    background-color: #383838;
+    height: 85vh;
+    width: 46vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center; 
+}
+.box2 img{
+    background-color: #383838;
+    height: 83vh;
+    width: 45vw;
+}
+.box1 h1{
+    background-color: #383838;
+    display: flex;
+    color: white;
+
+
+
+
+}
 h3{
     background-color: #383838;
     color: white;
     font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1em;
 
 
 }
 .input{
     font-size: 1.4rem;
-    height: 5vh;
-    width: 20vw;
+    height: 6vh;
+    width: 19vw;
     margin: .4em;
-    border-radius: 1em;
+    border-radius: .7em;
     border: 0;
     outline: 0;
 }
 .submitbtn{
     font-size: 1.4rem;
-    height: 5vh;
+    height: 7vh;
     width: 13vw;
     margin: 1em;
     border-radius: 1em;
@@ -54,4 +91,8 @@ h3{
 
 
 
+}
+.box1 p{
+    background-color: #383838;
+    color: aliceblue;
 }

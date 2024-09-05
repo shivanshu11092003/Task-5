@@ -1103,7 +1103,6 @@
           "name": "Riley Collins",
           "status": "absent"
         }
-        
       ]
     },
     {
@@ -1699,17 +1698,17 @@
         {
           "student_id": "00041",
           "name": "Owen Parker",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00042",
           "name": "Paige Evans",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00043",
           "name": "Quinn Edwards",
-          "status": "absent"
+          "status": "present"
         },
         {
           "student_id": "00044",

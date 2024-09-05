@@ -5,7 +5,7 @@ let x = 0;
 async function getteacher() {
     let response = await fetch("http://localhost:8000/student")
     const json = await response.json()
-    console.log(json)
+    console.log(response)
     console.log(teacherid.value)
     console.log(passwd.value)
 
@@ -60,3 +60,21 @@ submitbtn.addEventListener("click", () => {
 
 })
 
+/* .from
+   .at
+   .fromasync
+   .isArray
+   .of
+   .concat
+   .copywithin
+   .entries - return array iterable  iterator object 
+   .every - boolean 
+   .fill - value start end 
+   .filter - copy callbackfn
+   .find - return first element that satifes the condition
+   .findIndex - return index of element that passes the condition
+   .findlast -
+   .findlastindex-
+   .flat - return array from subarray
+
+    */

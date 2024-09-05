@@ -5,12 +5,6 @@ const addAttendence = document.getElementById("addAttendence")
 let date = []
 
 const dateinput = inputdate.value
-
-
-
-
-
-
 addAttendence.addEventListener("click", async () => {
     const comparedate = new Date(inputdate.value);
     console.log(comparedate.getDate())
@@ -18,13 +12,14 @@ addAttendence.addEventListener("click", async () => {
     console.log(x.getDate())
     if (x.getFullYear() == comparedate.getFullYear()) {
         if (x.getMonth() + 1 == comparedate.getMonth() + 1) {
-            if (comparedate.getDate()-3 <= x.getDate() ) {
+            if (comparedate.getDate()-3 <= x.getDate()) {
                 const dateinput = inputdate.value
                 localStorage.setItem("InputDate", dateinput)
 
                 let response = await fetch(`http://localhost:8000/data?date=${dateinput}`)
                 const json = await response.json()
                 const id = json.length;
+                
 
 
 
@@ -154,18 +149,18 @@ async function getdata(dateinput) {
         if (element.status == "present") {
             html += `  <div class="studentitem" id="studentitem${index}">
             <div class="name">  Name : ${element.name}  </div>
-            <div class="id">    Id:${element.student_id}  </div>
+            
             <div class="attendence">   Status:
-            <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}}" name="checkbox${index}}" value="present" Checked></label>
+            <label><input type="checkbox" class="inputcheckbox"  id="checkbox${index}" name="checkbox${index}" value="present" Checked ></label>
             </div>
                 
         </div>`
         } else {
             html += `  <div class="studentitem" id="studentitem${index}">
             <div class="name">  Name : ${element.name} </div>
-            <div class="id">    Id:${element.student_id}  </div>
+            
             <div class="attendence">   Status:
-            <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}    " name="checkbox${index}}" value="present"></label>
+            <label><input type="checkbox" class="inputcheckbox" id="checkbox${index}" name="checkbox${index}" value="present"></label>
             </div>
         </div>`
 
